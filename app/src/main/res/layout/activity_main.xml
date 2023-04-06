@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+
+    <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="DashBoard"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSignOut"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="105dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/appname"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_bg"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a new car:"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/text1"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="6dp"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/spinner1"
+            android:layout_marginTop="6dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/round2"
+            android:text="Add Car"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        tools:listitem="@layout/list_item" />
+
+</LinearLayout>

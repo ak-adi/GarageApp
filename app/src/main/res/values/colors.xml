@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FF5252</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#7e53c5</color>
+    <color name="youWinDark">#35A571</color>
+    <color name="youWinBackground">#B7F8C9</color>
+    <color name="gameOverBackground">#f8bbd0</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightblue">#99D8F4</color>
+    <color name="dialog">#C5E1A5</color>
+    <color name="green">#43A047</color>
+    <color name="spinner">#E0E0E0</color>
+    <color name="buttonColor">#9E9E9E</color>
+</resources>

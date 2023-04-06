@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    >
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user"
+        android:id="@+id/imageView"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#FAFAFA"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userNameError"
+                android:elevation="10dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                app:hintAnimationEnabled="true"
+                android:textColorHint="@color/primary_color_grey"
+                app:hintTextColor="@color/primary_color_grey"
+                app:boxStrokeColor="@color/black">
+
+            <EditText
+                android:id="@+id/registerUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:importantForAutofill="no"
+                android:singleLine="true"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:background="@drawable/round_edit"
+                android:textColorHint="@color/primary_color_grey"
+                android:padding="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerEmailError"
+                android:elevation="10dp"
+                app:hintAnimationEnabled="true"
+                android:textColorHint="@color/primary_color_grey"
+                app:hintTextColor="@color/primary_color_grey"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_below="@+id/userNameError">
+
+            <EditText
+                android:id="@+id/registerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:importantForAutofill="no"
+                android:singleLine="true"
+                android:elevation="8dp"
+                android:textSize="20sp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:background="@drawable/round_edit"
+                android:textColorHint="@color/primary_color_grey"
+                android:padding="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passwordError"
+                android:elevation="10dp"
+                app:hintAnimationEnabled="true"
+                android:textColorHint="@color/primary_color_grey"
+                app:hintTextColor="@color/primary_color_grey"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_below="@+id/registerEmailError">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:textSize="20sp"
+                android:id="@+id/registerPassword"
+                android:inputType="textPassword"
+                android:background="@drawable/round_edit"
+                android:maxLines="1"
+                android:importantForAutofill="no"
+                android:singleLine="true"
+                android:hint="Password"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:textColorHint="@color/primary_color_grey"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneError"
+                android:elevation="10dp"
+                app:hintAnimationEnabled="true"
+                android:textColorHint="@color/primary_color_grey"
+                app:hintTextColor="@color/primary_color_grey"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_below="@+id/passwordError">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="8dp"
+                    android:textSize="20sp"
+                    android:id="@+id/registerPhone"
+                    android:inputType="phone"
+                    android:background="@drawable/round_edit"
+                    android:maxLines="1"
+                    android:importantForAutofill="no"
+                    android:singleLine="true"
+                    android:hint="Mobile Number"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:textColorHint="@color/primary_color_grey"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonRegisterSignUp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneError"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round4"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
