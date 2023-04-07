@@ -2,7 +2,7 @@ package com.example.garageapp;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Make {
+public class VehicleName {
 
     @SerializedName("Make_ID")
     private int makeId;
@@ -10,7 +10,7 @@ public class Make {
     @SerializedName("Make_Name")
     private String makeName;
 
-    public Make(int makeId, String makeName) {
+    public VehicleName(int makeId, String makeName) {
         this.makeId = makeId;
         this.makeName = makeName;
     }
